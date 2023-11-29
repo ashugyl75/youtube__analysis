@@ -18,19 +18,19 @@ KEYWORD = 'Joe Rogan Podcast'
 MAX = 500
 
 
-def get_youtube_object():
-    file = open("API_KEY", 'r')  # opening the file containg my API key
+def get_youtube_object(DEVELOPER_KEY):
+    # file = open("API_KEY", 'r')  # opening the file containg my API key
 
     os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
     api_service_name = "youtube"
     api_version = "v3"
-    DEVELOPER_KEY = file.read()  # reading the API key from the file, did this for security purpose
-
+    # DEVELOPER_KEY = file.read()  # reading the API key from the file, did this for security purpose
     youtube = googleapiclient.discovery.build(
-        api_service_name, api_version, developerKey=DEVELOPER_KEY)
+            api_service_name, api_version, developerKey=DEVELOPER_KEY)
     print("got the youtube object")
     return youtube
+
 
 
 # a function to check if the token we are trying to make is actually a meaningful token
