@@ -82,7 +82,7 @@ class Video:
     # a function to check if all the functions work or not
     def do_it_all(self):
         self.process_comments()
-        nltk.download('vader_lexicon')
+
         self.sentiment_analysis()
         self.process_metaData()
         # self.create_commentsCloud()
