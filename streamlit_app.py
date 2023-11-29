@@ -291,7 +291,7 @@ def tab_home():
                 if avg == "Negative":
                     st.image("sad.png")
     except Exception as e:
-        st.write(f"""<h1>PLEASE ENTER YOUR VALID GOOGLE API KEY TO CONTINUE!!!</h1>""",unsafe_allow_html=True)
+        st.write(f"""<h1>Some problems has occurred, please check logs</h1>""",unsafe_allow_html=True)
 
 def about_us():
     st.title('About Us - YouTube Analyzer')
