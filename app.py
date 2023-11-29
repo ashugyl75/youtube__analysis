@@ -17,7 +17,7 @@ from wordcloud import WordCloud
 KEYWORD = 'Joe Rogan Podcast'
 
 # max comments to be scraped
-MAX = 500
+MAX = 10
 
 
 def get_youtube_object(DEVELOPER_KEY):
