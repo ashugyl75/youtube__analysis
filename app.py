@@ -3,7 +3,7 @@ import pickle
 import re
 
 import googleapiclient.discovery  # youtube api
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import pandas as pd
 import spacy
 # VADER

@@ -4,6 +4,6 @@ plotly==5.18.0
 tqdm==4.66.1
 google-api-python-client==2.108.0
 matplotlib==3.8.2
-spacy==3.7.2
+spacy~=3.7.2
 nltk==3.8.1
 wordcloud==1.9.2
