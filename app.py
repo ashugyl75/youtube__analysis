@@ -17,7 +17,7 @@ from wordcloud import WordCloud
 KEYWORD = 'Joe Rogan Podcast'
 
 # max comments to be scraped
-MAX = 500
+MAX = 10
 
 
 def get_youtube_object(DEVELOPER_KEY):
@@ -29,7 +29,7 @@ def get_youtube_object(DEVELOPER_KEY):
     api_version = "v3"
     # DEVELOPER_KEY = file.read()  # reading the API key from the file, did this for security purpose
     youtube = googleapiclient.discovery.build(
-            api_service_name, api_version, developerKey=DEVELOPER_KEY)
+            api_service_name, api_version, developerKey="AIzaSyB0FQKeiNiUFeH5noF1BIwCeuIdxZewUAc")
     print("got the youtube object")
     return youtube
 
@@ -82,7 +82,11 @@ class Video:
     # a function to check if all the functions work or not
     def do_it_all(self):
         self.process_comments()
+# <<<<<<< HEAD
 
+# =======
+
+# >>>>>>> 7bdaca0725c1c18103d5a952e6cf9474ec51fa49
         self.sentiment_analysis()
         self.process_metaData()
         # self.create_commentsCloud()
@@ -103,7 +107,7 @@ class Video:
     # a function to generate VADER sentiment analysis of the comments
     # only to be used after generating tokens using process_comments() function
     #kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
-    def sentiment_analysis(self):
+    def fsentiment_analysis(self):
         try:
             # nltk.download('vader_lexicon')
             SIA = SentimentIntensityAnalyzer()
