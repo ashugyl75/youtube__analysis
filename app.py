@@ -107,7 +107,7 @@ class Video:
     # a function to generate VADER sentiment analysis of the comments
     # only to be used after generating tokens using process_comments() function
     #kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
-    def fsentiment_analysis(self):
+    def sentiment_analysis(self):
         try:
             # nltk.download('vader_lexicon')
             SIA = SentimentIntensityAnalyzer()

@@ -103,16 +103,16 @@ def tab_home():
     search_query = st.text_input('Enter search keyword:', 'Joe Rogan Podcast', max_chars=20,
                                  help="enter the keyword you want to search on youtube")
 
-    youtube = app.get_youtube_object(API_token)
-    
+    # youtube = app.get_youtube_object(API_token)
+
     # try:
-    search = app.Search(keyword=search_query, youtube=youtube)  # creating the search object
+    # search = app.Search(keyword=search_query, youtube=youtube)  # creating the search object
+    search = return_pickle()
     if search:
         print("successfully got search object")
-    # search = return_pickle()
-    nltk.download('vader_lexicon')
-    for vid in tqdm(search.videos, "do_it_all_functions"):
-        search.videos[vid].do_it_all()
+    # nltk.download('vader_lexicon')
+    # for vid in tqdm(search.videos, "do_it_all_functions"):
+    #     search.videos[vid].do_it_all()
 
     vid_keys = list(search.videos.keys())
 
