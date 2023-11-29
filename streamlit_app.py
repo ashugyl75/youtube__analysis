@@ -160,7 +160,7 @@ def tab_home():
                                     "Like Count vs Comment Count"))
         scatterplot = st.radio("Select a video for ScatterPlot",
                                ("Video 1", "Video 2", "Video 3", "Video 4", "Video 5"))
-        word_cloud_sentiment = st.multiselect('select topic', ['Positive', 'Neutral', 'Negative'])
+        word_cloud_sentiment = st.multiselect('select topic', ['Positive', 'Neutral', 'Negative'], default=['Positive', 'Neutral', 'Negative'])
 
     col1, col2 = st.columns(2)
     # Like Count vs View Count
