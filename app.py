@@ -104,7 +104,7 @@ class Video:
     #kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
     def sentiment_analysis(self):
         try:
-            nltk.download('vader_lexicon')
+            # nltk.download('vader_lexicon')
             SIA = SentimentIntensityAnalyzer()
             results = {}
             for i, row in tqdm(self.comments.iterrows(),"sentiment Analysis"):  # iterate through each row of the comments dataset
