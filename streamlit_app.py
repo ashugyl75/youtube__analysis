@@ -260,7 +260,7 @@ def tab_home():
         # Display word cloud in the first column
         with cols[0]:
             wordcloud = search.videos[vid_keys[i]].create_commentsCloud(word_cloud_sentiment)
-            st.image(wordcloud.to_array(), width=750)
+            st.image(wordcloud.to_array(), width=700)
 
         # Display title parallel to the word cloud in the second column
         with cols[1]:
