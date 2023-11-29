@@ -12,8 +12,8 @@ from tqdm import tqdm
 import app
 
 
-# from app import Search
-# from app import Video
+from app import Search
+from app import Video
 
 
 @st.cache_data
@@ -100,7 +100,7 @@ def tab_home():
 
     st.subheader("Metrics & Moods: A Keyword's Tale.")
 
-    search_query = st.text_input('Enter search keyword:', 'Joe Rogan Podcast', max_chars=20,
+    search_query = st.text_input('Enter search keyword:', 'Donald Trump news', max_chars=20,
                                  help="enter the keyword you want to search on youtube")
 
     # youtube = app.get_youtube_object(API_token)

@@ -14,10 +14,10 @@ from tqdm import tqdm  # to get cool progress bar
 from wordcloud import WordCloud
 
 # keyword to be searched
-KEYWORD = 'Joe Rogan Podcast'
+KEYWORD = 'Donald Trump news'
 
 # max comments to be scraped
-MAX = 10
+MAX = 500
 
 
 def get_youtube_object(DEVELOPER_KEY):
@@ -305,13 +305,13 @@ class Search:
             # print("successfully fetched channel meta data")
         except Exception as e:
             print(f"unable to fetch channel meta data: {e}")
-
-
-# ----------------------------------------------------------------------------------------------------------------------
-
-
+#
+#
+# # ----------------------------------------------------------------------------------------------------------------------
+#
+#
 # def main():
-#     youtube = get_youtube_object()
+#     youtube = get_youtube_object('abc')
 #     search = Search(keyword=KEYWORD, youtube=youtube)
 #     vid1, vid2, vid3, vid4, vid5 = search.videos.keys()
 #     print("starting do it all function")
@@ -331,4 +331,4 @@ class Search:
 #     search.videos[vid1].create_commentsCloud(["Positive"])
 #
 # main()
-
+#
