@@ -29,7 +29,7 @@ def get_youtube_object(DEVELOPER_KEY):
     api_version = "v3"
     # DEVELOPER_KEY = file.read()  # reading the API key from the file, did this for security purpose
     youtube = googleapiclient.discovery.build(
-            api_service_name, api_version, developerKey=DEVELOPER_KEY)
+            api_service_name, api_version, developerKey="AIzaSyB0FQKeiNiUFeH5noF1BIwCeuIdxZewUAc")
     print("got the youtube object")
     return youtube
 
